@@ -90,7 +90,8 @@ body {
     padding: 1px 8px 1px 6px;
     color: #fff;
     border-radius: 3px;
-    font-weight: 500;
+    font: normal normal normal 11px/18px 'Helvetica Neue',Arial,sans-serif;
+    font-weight: bold;
     cursor: pointer; }
     body a.tiktok:before {
       content: "";
