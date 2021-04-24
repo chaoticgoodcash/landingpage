@@ -92,6 +92,13 @@ body {
     border-radius: 3px;
     font-weight: 500;
     cursor: pointer; }
+    body a.tiktok:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-color: cyan; }
     body a.tiktok i {
       position: relative;
       top: 2px;
