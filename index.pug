@@ -16,12 +16,30 @@ html
             li 
               a.tiktok(href='https://www.tiktok.com/@chaoticgoodcash?lang=en') 
                   i
-                  span TikTok @chaoticgoodcash
+                  span TikTok to @chaoticgoodcash
             li 
               a.twitter-mention-button(href='https://twitter.com/intent/tweet?screen_name=chaoticgoodcash&ref_src=twsrc%5Etfw' data-show-count='false') Tweet to @chaoticgoodcash
         p You can help it grow by adding to the accounts. 
-        ul 
-            li Venmo
-            li Paypal 
+        br
+        #paypal-button-container-P-7A107151GR2389513MCDNMIY
+          script(src='https://www.paypal.com/sdk/js?client-id=AaL-i8-d3-JVlJAgTwpSYE-Rz8zyC134vae0qii9-LwjUQvbtGe9KDYtg1pmR243lA9x0SjlK7k3JrDO&vault=true&intent=subscription' data-sdk-integration-source='button-factory')
+          script.
+            paypal.Buttons({
+            style: {
+            shape: 'pill',
+            color: 'gold',
+            layout: 'vertical',
+            label: 'subscribe'
+            },
+            createSubscription: function(data, actions) {
+            return actions.subscription.create({
+            /* Creates the subscription */
+            plan_id: 'P-7A107151GR2389513MCDNMIY'
+            });
+            },
+            onApprove: function(data, actions) {
+            alert(data.subscriptionID); // You can add optional success message for the subscriber here
+            }
+            }).render('#paypal-button-container-P-7A107151GR2389513MCDNMIY'); // Renders the PayPal button
 
         h4 I just want to leave a little kindness for others.

@@ -12,14 +12,33 @@
     <p>Every week I empty the ChaoticGood accounts into cash. I then leave the bag of cash somewhere. I'll leave clues on social accts. </p>
     <p>Find it. Keep it. Share it. </p>
     <ul> 
-      <li> <a class="tiktok" href="https://www.tiktok.com/@chaoticgoodcash?lang=en"> <i></i><span>TikTok @chaoticgoodcash</span></a></li>
+      <li> <a class="tiktok" href="https://www.tiktok.com/@chaoticgoodcash?lang=en"> <i></i><span>TikTok to @chaoticgoodcash</span></a></li>
       <li> <a class="twitter-mention-button" href="https://twitter.com/intent/tweet?screen_name=chaoticgoodcash&amp;ref_src=twsrc%5Etfw" data-show-count="false">Tweet to @chaoticgoodcash</a></li>
     </ul>
-    <p>You can help it grow by adding to the accounts. </p>
-    <ul> 
-      <li>Venmo</li>
-      <li>Paypal </li>
-    </ul>
+    <p>You can help it grow by adding to the accounts. </p><br/>
+    <div id="paypal-button-container-P-7A107151GR2389513MCDNMIY">
+      <script src="https://www.paypal.com/sdk/js?client-id=AaL-i8-d3-JVlJAgTwpSYE-Rz8zyC134vae0qii9-LwjUQvbtGe9KDYtg1pmR243lA9x0SjlK7k3JrDO&amp;vault=true&amp;intent=subscription" data-sdk-integration-source="button-factory"></script>
+      <script>
+        paypal.Buttons({
+        style: {
+        shape: 'pill',
+        color: 'gold',
+        layout: 'vertical',
+        label: 'subscribe'
+        },
+        createSubscription: function(data, actions) {
+        return actions.subscription.create({
+        /* Creates the subscription */
+        plan_id: 'P-7A107151GR2389513MCDNMIY'
+        });
+        },
+        onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+        }
+        }).render('#paypal-button-container-P-7A107151GR2389513MCDNMIY'); // Renders the PayPal button
+        
+      </script>
+    </div>
     <h4>I just want to leave a little kindness for others.</h4>
   </body>
 </html>
