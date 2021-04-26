@@ -92,31 +92,9 @@ code
 body
     margin: 10% auto 20%
     width: 600px
-    a.tiktok
+    a
+      height: 20px
       position: relative
-      &:before
-        content: ""
-        background-color: #4de8f4
-        padding: 15px
-        height: 20px
-        width: 100px
-        position: absolute
-        top: 0px
-        left: 0px
-        z-index: -1
-
-      &:after
-        background-color: #fd3e3e
-        padding: 15px
-        height: 20px
-        width: 100px
-        position: absolute
-        top: 5px
-        left: 5px
-        font-weight: bold
-        content: ""
-        z-index: -1
-      mix-blend-mode: multiply
       box-sizing: border-box
       padding: 1px 8px 1px 6px
       color: #fff
@@ -125,11 +103,36 @@ body
       font-weight: bold
       cursor: pointer
       text-decoration: none
+    a.tiktok
+      &:before
+        content: ""
+        background-color: #4de8f4
+        height: 20px
+        width: 100%
+        position: absolute
+        top: -4px
+        left: 0px
+        z-index: -1
+        mix-blend-mode: multiply
+        border-radius: 3px
+      &:after
+        background-color: #fd3e3e
+        height: 20px
+        width: 100%
+        position: absolute
+        top: -2px
+        left: 3px
+        font-weight: bold
+        content: ""
+        z-index: -1
+        mix-blend-mode: multiply
+        border-radius: 3px
       i
         position: relative
         top: 2px
         display: inline-block
-        width: 14px
-        height: 14px
-        background: transparent 0 0 no-repeat
-        background-image: url();
+        margin-right: 4px
+        width: 11px
+        height: 12px
+        background-image: url(./icons8-tiktok.svg);
+    a.twitter-mention-button

@@ -1,0 +1,2 @@
+gp preview file://$GITPOD_REPO_ROOT/index.html
+npx browser-sync start -s -w
